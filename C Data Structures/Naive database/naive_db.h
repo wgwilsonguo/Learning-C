@@ -7,19 +7,18 @@
 #define MAX_DATA 512
 #define MAX_ROWS 100
 
-typedef struct{
+typedef struct {
     int id;
     int set;
     char name[MAX_DATA];
     char email[MAX_DATA];
 }Address;
 
-
-typedef struct{
+typedef struct {
     Address rows[MAX_ROWS];
 }Database;
 
-typedef struct{
+typedef struct {
     FILE *file;
     Database *db;
 }Connection;
