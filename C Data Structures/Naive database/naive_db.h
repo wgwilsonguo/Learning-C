@@ -16,10 +16,10 @@ typedef struct{
 
 
 typedef struct{
-    struct Address rows[MAX_ROWS];
+    Address rows[MAX_ROWS];
 }Database;
 
 typedef struct{
     FILE *file;
-    struct Database *db;
+    Database *db;
 }Connection;
